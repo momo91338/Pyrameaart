@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyraméa Art - الأعمال اليدوية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      background: #f8f8f8;
+    }
+    header {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header img {
+      height: 50px;
+      margin-left: 10px;
+    }
+    header h1 {
+      font-size: 28px;
+      color: #333;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #444;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e91e63;
+    }
+    .site-description {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+    }
+    .section {
+      padding: 30px 20px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .slider {
+      position: relative;
+      background: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .slider img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background-color: #fff;
+    }
+    .slider button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .slider button:first-child { right: 10px; }
+    .slider button:last-child { left: 10px; }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #555;
+    }
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .contact {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 22px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #e0b300;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <div class="top-bar">
+      <img src="home.PNG" alt="شعار">
+      <h1>Pyraméa Art</h1>
+    </div>
+    <nav>
+      <a href="#vases">الفازات</a>
+      <a href="#artifacts">التحف</a>
+      <a href="#cups">الكؤوس</a>
+      <a href="#contact">اتصل بنا</a>
+          <a href="#momo">أعمال  متنوعة</a>
+    
+    </nav>
+  </header>
+
+  <!-- وصف الموقع -->
+  <div class="site-description">
+    <p>نحن نقدم أعمالًا يدوية فريدة تشمل الفازات، التحف، النسخ الأثرية، والكؤوس الرياضية المصنوعة بحب وإتقان.</p>
+  </div>
+
+  <!-- قسم الفازات -->
+  <section class="section" id="vases">
+    <h2>الفازات</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="vase1_1.jpg" data-images="vase1_1.jpg,v.PNG,vase1_3.PNG">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3> فازة "الحلقة البيضاء"
+</h3>
+  <p>فازة ديكور أنيقة وعصرية بتصميم دائري مبتكر مع فتحة واسعة في المنتصف تضيف لمسة فنية فريدة لأي مساحة. مصنوعة يدويًا من مزيج بودرة الرخام والبوليستر، مما يمنحها ملمسًا ناعمًا ومتانة ية مع لمسة فاخرة غير لامعة. مثالية لتنسيقات الزهور البسيطة بأسلوب مينيمالي، وتُعد إضافة راقية لأي طاولة أو رف في المنزل أو المكتب، كما تصلح كهدية مميزة لعشاق الديكور الحديث.
+</p>
+       <p class="price">€15</p>
+      </div>
+   
+    
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="vase2_1.jpg" data-images="vase2_1.jpg,vase2_2.jpg">
+          <button onclick="nextImage(this)">›
+          </button>
+        </div>
+        <h3>فازة كلاسيك</h3>
+        <p>بتصميم فرعوني أنيق تضيف فخامة لمنزلك.</p>
+        <p class="price">€40</p>
+      </div>
+    </div>
+
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="vase2_1.jpg" data-images="vase2_1.jpg,vase2_2.jpg">
+          <button onclick="nextImage(this)">›
+          </button>
+        </div>
+        <h3>فازة كلاسيك</h3>
+        <p>بتصميم فرعوني أنيق تضيف فخامة لمنزلك.</p>
+        <p class="price">€40</p>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- قسم التحف -->
+  <section class="section" id="artifacts">
+    <h2>التحف</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="artifact1_1.jpg" data-images="artifact1_1.jpg,artifact1_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>تمثال صغير</h3>
+        <p>منحوت يدويًا بأدق التفاصيل لمحبي الفن القديم.</p>
+        <p class="price">€50</p>
+      </div>
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="artifact2_1.jpg" data-images="artifact2_1.jpg,artifact2_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>لوحة جدارية</h3>
+        <p>لوحة مزخرفة مستوحاة من الحضارة المصرية القديمة.</p>
+        <p class="price">€60</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- قسم الكؤوس -->
+  <section class="section" id="cups">
+    <h2>الكؤوس</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="cup1_1.jpg" data-images="cup1_1.jpg,cup1_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>كأس ذهبي</h3>
+        <p>نسخة طبق الأصل من كؤوس البطولات العالمية.</p>
+        <p class="price">€70</p>
+      </div>
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="cup2_1.jpg" data-images="cup2_1.jpg,cup2_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>كأس فضي</h3>
+        <p>هدية مميزة لمحبي كرة القدم والرياضة.</p>
+        <p class="price">€65</p>
+      </div>
+    </div>
+  </section>
+
+ 
+ 
+  <!--قسم
+ أعمال متنوعة -->
+  <section class="section" id="momo">
+            <h3> أعمال متنوعة</h3>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="cup1_1.jpg" data-images="cup1_1.jpg,cup1_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>شطرنج</h3>
+        <p>شطرنج</p>
+        <p class="price">€70</p>
+      </div>
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="cup2_1.jpg" data-images="cup2_1.jpg,cup2_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>كأس فضي</h3>
+        <p>هدية مميزة لمحبي كرة القدم والرياضة.</p>
+        <p class="price">€65</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- قسم التواصل -->
+  <footer class="contact" id="contact">
+    <h2>تواصل معنا</h2>
+    <p>pyrameaart@gmail.com</p>
+    <div class="social-icons">
+      <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://facebook.com/pyrameaart" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://tiktok.com/@pyrameaart" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://instagram.com/pyrameaart" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/@pyrameaart" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- جافاسكربت للصور -->
+  <script>
+    function nextImage(button) {
+      const img = button.parentElement.querySelector('img');
+      const images = img.dataset.images.split(',');
+      let index = images.indexOf(img.src.split('/').pop());
+      index = (index + 1) % images.length;
+      img.src = images[index];
+    }
+
+    function prevImage(button) {
+      const img = button.parentElement.querySelector('img');
+      const images = img.dataset.images.split(',');
+      let index = images.indexOf(img.src.split('/').pop());
+      index = (index - 1 + images.length) % images.length;
+      img.src = images[index];
+    }
+  </script>
+
+</body>
+                                               </html>
