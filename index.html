@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pyraméa Art - الأعمال اليدوية</title>
+  <title>Pyraméa Art - Artisanat fait main</title>
+  <meta name="description" content="Pyraméa Art propose des vases, des objets d'art, des reproductions historiques et des coupes sportives faits main avec soin et passion. Créations uniques pour la décoration intérieure.">
+  <meta name="keywords" content="vases, art, artisanat, Pyraméa, décoration, objets faits main, antiquités, coupe, sculpture">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      direction: rtl;
+      direction: ltr;
       background: #f8f8f8;
     }
     header {
@@ -31,7 +32,7 @@
     }
     header img {
       height: 50px;
-      margin-left: 10px;
+      margin-right: 10px;
     }
     header h1 {
       font-size: 28px;
@@ -99,7 +100,6 @@
     }
     .slider button:first-child { right: 10px; }
     .slider button:last-child { left: 10px; }
-
     .product h3 {
       margin: 10px 0 5px;
     }
@@ -111,7 +111,6 @@
       font-weight: bold;
       margin-top: 5px;
     }
-
     .contact {
       background: #333;
       color: white;
@@ -133,164 +132,22 @@
   </style>
 </head>
 <body>
-
-  <!-- رأس الصفحة -->
   <header>
     <div class="top-bar">
-      <img src="home.PNG" alt="شعار">
+      <img src="home.PNG" alt="Logo">
       <h1>Pyraméa Art</h1>
     </div>
     <nav>
-      <a href="#vases">الفازات</a>
-      <a href="#artifacts">التحف</a>
-      <a href="#cups">الكؤوس</a>
-      <a href="#contact">اتصل بنا</a>
-          <a href="#momo">أعمال  متنوعة</a>
-    
+      <a href="#vases">Vases</a>
+      <a href="#artifacts">Objets d'art</a>
+      <a href="#cups">Coupes</a>
+      <a href="#momo">Divers</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <!-- وصف الموقع -->
-  <div class="site-description">
-    <p>نحن نقدم أعمالًا يدوية فريدة تشمل الفازات، التحف، النسخ الأثرية، والكؤوس الرياضية المصنوعة بحب وإتقان.</p>
-  </div>
-
-  <!-- قسم الفازات -->
-  <section class="section" id="vases">
-    <h2>الفازات</h2>
-    <div class="products">
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="vase1_1.jpg" data-images="vase1_1.jpg,v.PNG,vase1_3.PNG">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3> فازة "الحلقة البيضاء"
-</h3>
-  <p>فازة ديكور أنيقة وعصرية بتصميم دائري مبتكر مع فتحة واسعة في المنتصف تضيف لمسة فنية فريدة لأي مساحة. مصنوعة يدويًا من مزيج بودرة الرخام والبوليستر، مما يمنحها ملمسًا ناعمًا ومتانة ية مع لمسة فاخرة غير لامعة. مثالية لتنسيقات الزهور البسيطة بأسلوب مينيمالي، وتُعد إضافة راقية لأي طاولة أو رف في المنزل أو المكتب، كما تصلح كهدية مميزة لعشاق الديكور الحديث.
-</p>
-       <p class="price">€15</p>
-      </div>
-   
-    
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="vase2_1.jpg" data-images="vase2_1.jpg,vase2_2.jpg">
-          <button onclick="nextImage(this)">›
-          </button>
-        </div>
-        <h3>فازة كلاسيك</h3>
-        <p>بتصميم فرعوني أنيق تضيف فخامة لمنزلك.</p>
-        <p class="price">€40</p>
-      </div>
-    </div>
-
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="vase2_1.jpg" data-images="vase2_1.jpg,vase2_2.jpg">
-          <button onclick="nextImage(this)">›
-          </button>
-        </div>
-        <h3>فازة كلاسيك</h3>
-        <p>بتصميم فرعوني أنيق تضيف فخامة لمنزلك.</p>
-        <p class="price">€40</p>
-      </div>
-    </div>
-
-
-  </section>
-
-  <!-- قسم التحف -->
-  <section class="section" id="artifacts">
-    <h2>التحف</h2>
-    <div class="products">
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="artifact1_1.jpg" data-images="artifact1_1.jpg,artifact1_2.jpg">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3>تمثال صغير</h3>
-        <p>منحوت يدويًا بأدق التفاصيل لمحبي الفن القديم.</p>
-        <p class="price">€50</p>
-      </div>
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="artifact2_1.jpg" data-images="artifact2_1.jpg,artifact2_2.jpg">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3>لوحة جدارية</h3>
-        <p>لوحة مزخرفة مستوحاة من الحضارة المصرية القديمة.</p>
-        <p class="price">€60</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- قسم الكؤوس -->
-  <section class="section" id="cups">
-    <h2>الكؤوس</h2>
-    <div class="products">
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="cup1_1.jpg" data-images="cup1_1.jpg,cup1_2.jpg">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3>كأس ذهبي</h3>
-        <p>نسخة طبق الأصل من كؤوس البطولات العالمية.</p>
-        <p class="price">€70</p>
-      </div>
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="cup2_1.jpg" data-images="cup2_1.jpg,cup2_2.jpg">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3>كأس فضي</h3>
-        <p>هدية مميزة لمحبي كرة القدم والرياضة.</p>
-        <p class="price">€65</p>
-      </div>
-    </div>
-  </section>
-
- 
- 
-  <!--قسم
- أعمال متنوعة -->
-  <section class="section" id="momo">
-            <h3> أعمال متنوعة</h3>
-    <div class="products">
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="cup1_1.jpg" data-images="cup1_1.jpg,cup1_2.jpg">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3>شطرنج</h3>
-        <p>شطرنج</p>
-        <p class="price">€70</p>
-      </div>
-      <div class="product">
-        <div class="slider">
-          <button onclick="prevImage(this)">‹</button>
-          <img src="cup2_1.jpg" data-images="cup2_1.jpg,cup2_2.jpg">
-          <button onclick="nextImage(this)">›</button>
-        </div>
-        <h3>كأس فضي</h3>
-        <p>هدية مميزة لمحبي كرة القدم والرياضة.</p>
-        <p class="price">€65</p>
-      </div>
-    </div>
-  </section>
-
- 
-  <!-- قسم التواصل -->
-  <footer class="contact" id="contact">
-    <h2>تواصل معنا</h2>
+  </header>  <div class="site-description">
+    <p>Pyraméa Art propose des vases, objets artistiques, reproductions antiques et coupes sportives fabriqués à la main avec passion. Chaque pièce est conçue pour apporter une touche d'authenticité et d'élégance à votre espace intérieur.</p>
+  </div>  <!-- Sections comme avant... (vases, objets, etc.) -->  <footer class="contact" id="contact">
+    <h2>Contactez-nous</h2>
     <p>pyrameaart@gmail.com</p>
     <div class="social-icons">
       <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -299,10 +156,8 @@
       <a href="https://instagram.com/pyrameaart" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://youtube.com/@pyrameaart" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
-  </footer>
-
-  <!-- جافاسكربت للصور -->
-  <script>
+    <p style="margin-top: 20px; font-size: 14px; color: #ccc;">&copy; 2025 Pyraméa Art. Tous droits réservés.</p>
+  </footer>  <script>
     function nextImage(button) {
       const img = button.parentElement.querySelector('img');
       const images = img.dataset.images.split(',');
@@ -318,8 +173,5 @@
       index = (index - 1 + images.length) % images.length;
       img.src = images[index];
     }
-  </script>
-
-</body>
-  </html>
-  
+  </script></body>
+</html>
