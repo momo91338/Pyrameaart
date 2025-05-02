@@ -1,17 +1,18 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pyraméa Art - Artisanat fait main</title>
   <meta name="description" content="Pyraméa Art propose des vases, des objets d'art, des reproductions historiques et des coupes sportives faits main avec soin et passion. Créations uniques pour la décoration intérieure.">
   <meta name="keywords" content="vases, art, artisanat, Pyraméa, décoration, objets faits main, antiquités, coupe, sculpture">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      direction: ltr;
       background: #f8f8f8;
     }
     header {
@@ -24,11 +25,6 @@
       position: sticky;
       top: 0;
       z-index: 999;
-    }
-    .top-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     header img {
       height: 50px;
@@ -132,6 +128,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <div class="top-bar">
       <img src="home.PNG" alt="Logo">
@@ -144,11 +141,79 @@
       <a href="#momo">Divers</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <div class="site-description">
+  </header>
+
+  <div class="site-description">
     <p>Pyraméa Art propose des vases, objets artistiques, reproductions antiques et coupes sportives fabriqués à la main avec passion. Chaque pièce est conçue pour apporter une touche d'authenticité et d'élégance à votre espace intérieur.</p>
-  </div>  <!-- Sections comme avant... (vases, objets, etc.) -->  <footer class="contact" id="contact">
+  </div>
+
+  <section class="section" id="vases">
+    <h2>Vases</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="vase1_1.jpg" data-images="vase1_1.jpg,vase1_2.jpg,vase1_3.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>Vase Cercle</h3>
+        <p>Vase élégant avec ouverture centrale circulaire, fait main en poudre de marbre et polyester.</p>
+        <p class="price">€15</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="artifacts">
+    <h2>Objets d'art</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="artifact1_1.jpg" data-images="artifact1_1.jpg,artifact1_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>Petite Statue</h3>
+        <p>Sculpture artisanale inspirée de l’art antique.</p>
+        <p class="price">€50</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cups">
+    <h2>Coupes</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="cup1_1.jpg" data-images="cup1_1.jpg,cup1_2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>Coupe Dorée</h3>
+        <p>Réplique fidèle d'un trophée de championnat.</p>
+        <p class="price">€70</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="momo">
+    <h2>Articles Divers</h2>
+    <div class="products">
+      <div class="product">
+        <div class="slider">
+          <button onclick="prevImage(this)">‹</button>
+          <img src="chess1.jpg" data-images="chess1.jpg,chess2.jpg">
+          <button onclick="nextImage(this)">›</button>
+        </div>
+        <h3>Échiquier</h3>
+        <p>Jeu d'échecs fait main en style pharaonique.</p>
+        <p class="price">€70</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="contact" id="contact">
     <h2>Contactez-nous</h2>
-    <p>pyrameaart@gmail.com</p>
+    <p>Email : pyrameaart@gmail.com</p>
     <div class="social-icons">
       <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://facebook.com/pyrameaart" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -157,7 +222,9 @@
       <a href="https://youtube.com/@pyrameaart" target="_blank"><i class="fab fa-youtube"></i></a>
     </div>
     <p style="margin-top: 20px; font-size: 14px; color: #ccc;">&copy; 2025 Pyraméa Art. Tous droits réservés.</p>
-  </footer>  <script>
+  </footer>
+
+  <script>
     function nextImage(button) {
       const img = button.parentElement.querySelector('img');
       const images = img.dataset.images.split(',');
@@ -173,5 +240,7 @@
       index = (index - 1 + images.length) % images.length;
       img.src = images[index];
     }
-  </script></body>
+  </script>
+
+</body>
 </html>
